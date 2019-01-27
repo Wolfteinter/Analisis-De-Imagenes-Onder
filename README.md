@@ -1,1 +1,4 @@
-# Analisis-De-Imagenes-2019-2
+# Analisis De Imagenes
+Lenguajes de programacion:
+- Python :snake:
+- Java :coffee:
