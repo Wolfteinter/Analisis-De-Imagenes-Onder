@@ -1,7 +1,11 @@
 from imageManager import ImageManager
+from imageHistogram import ImageHistogram
 img = ImageManager()
-
 imagen = img.openImage()
-print(img.getDim(imagen))
+ih = ImageHistogram(imagen)
 img.showImagen(imagen)
-img.saveImage(imagen)
+ih.histogramaRGB()
+ih.histogramaR()
+ih.histogramaG()
+ih.histogramaB()
+#img.saveImage(imagen)

@@ -3,9 +3,11 @@ from tkinter import filedialog
 from PIL import Image
 from tkinter import ttk
 class ImageManager(object):
+    #Selector de archivos para escojer una imagen
     def openImage(self):
         #Variable para usar el Chooser
         root = Tk()
+        root.config(width=0, height=0)
         #Se abre el Chooser
         #Se obtiene la ruta del la imagen
         root.filename =  filedialog.askopenfilename(initialdir = "/home/wolfteinter/Escritorio",title = "Select file",filetypes = (("all files","*.*"),("jpeg files","*.jpg")))
@@ -28,7 +30,7 @@ class ImageManager(object):
         texto = ttk.Label(root,text="Nombre: ")
         texto.place(x=10, y=50)
         entry.place(x=60, y=50)
-        button = ttk.Button(root, text="Obtener texto",
+        button = ttk.Button(root, text="Generar Imagen",
             command=lambda: image.save(entry.get()+".png"))
         button.place(x=50, y=100)
         root.mainloop()
