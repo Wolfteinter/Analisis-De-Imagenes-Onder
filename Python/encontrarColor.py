@@ -21,9 +21,20 @@ def cambiarPixeles2(imagen,color,inter):
             if(compararColores(calcularEntero(r,g,b),calcularEntero(color[0],color[1],color[2]),inter)):
                 pixels[x,y]=(255,255,0)
     img.saveImage(imagen)
+def intercambiarPixeles(imagen1,imagen2):
+    #Imagen1 tiene el croma
+    inter = 65
+    width, height = imagen1.size
+    pixels1 = imagen1.load()
+    pixels2 = imagen2.load()
+    for x in range(width):
+        for y in range(height):
+            r, g, b = pixels1[x,y]
+            if(compararColores(r,70,inter) and compararColores(g,255,inter) and compararColores(b,10,inter)):
+                pixels1[x,y]=pixels2[x,y]
+    img.saveImage(imagen)
 
 img = ImageManager()
 imagen = img.openImage()
-cambiarPixeles2(imagen,(63,11,1),100)
-print(img.getDim(imagen))
-img.showImagen(imagen)
+imagen2 = img.openImage()
+intercambiarPixeles(imagen,imagen2)
