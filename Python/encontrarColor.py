@@ -23,7 +23,7 @@ def cambiarPixeles2(imagen,color,inter):
     img.saveImage(imagen)
 def intercambiarPixeles(imagen1,imagen2):
     #Imagen1 tiene el croma
-    inter = 65
+    inter = 80
     width, height = imagen1.size
     pixels1 = imagen1.load()
     pixels2 = imagen2.load()
