@@ -6,4 +6,4 @@ img = ImageManager()
 tools = ToolsImage()
 #Se abre imagen1
 imagen1 = img.openImage()
-tools.greyScale(imagen1)
+img.showImagen(tools.greyScale(imagen1))

@@ -6,4 +6,4 @@ img = ImageManager()
 tools = ToolsImage()
 #Se abre imagen1
 imagen1 = img.openImage()
-img.saveImage(tools.simpleUmbralizacion(tools.greyScale(imagen1),200))
+img.showImagen(tools.simpleUmbralizacion(tools.greyScale(imagen1),200))

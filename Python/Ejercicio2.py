@@ -8,4 +8,4 @@ imagen1 = img.openImage()
 #Se abre imagen2
 imagen2 = img.openImage()
 #Se aplica el efecto chroma key
-tools.chromaKey(imagen1,imagen2,90)
+img.showImagen(tools.chromaKey(imagen1,imagen2,90))
