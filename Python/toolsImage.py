@@ -2,7 +2,15 @@ import matplotlib.pyplot as plt
 from imageManager import ImageManager
 from random import randint
 import numpy as np
-from numpy import log
+from numpy import log,e
+import numpy as np
+from math import sqrt,pi
+#import psycho
+#psycho.full()
+#CURP = CXGO980405HZSMRN03   002930903891040693
+def createGenerator(n):
+    for i in range(0, n):
+        yield i
 class ToolsImage(object):
     #En las partes que image1 tiene el efecto chroma key es sustituido por image2
     def chromaKey(self,image1,image2,precision):
@@ -17,6 +25,21 @@ class ToolsImage(object):
                 if(self.compareInterval(r,0,precision) and self.compareInterval(g,255,precision) and self.compareInterval(b,0,precision)):
                     pixels1[x,y]=pixels2[x,y]
         return imagenAux
+    def debug(self,image):
+        imagenAux=image.copy()
+        width, height = imagenAux.size
+        pixels = imagenAux.load()
+        for x in range(3):
+            for y in range(3):
+                print(pixels[x,y],"  ",end="")
+            print("\n")
+    def debug2(self,image):
+        imagenAux2=image.copy()
+        consulta = imagenAux2.load()
+        generateSample=self.generateSample
+        sample = generateSample(1,1,3,consulta)
+        print(self.convolution([[0,1,0],[1,-4,1],[0,1,0]],sample,1))
+        #print(sample)
     def displace(self,image,c):
         imagenAux=image.copy()
         width, height = imagenAux.size
@@ -76,31 +99,22 @@ class ToolsImage(object):
                 newB = int(self.evaluateValue(pow((1+z),b)/z))
                 pixels[x,y]=(newR,newG,newB)
         return imagenAux
-    def tangencialExpand(self,image):
+        # j es [0,1] 0 es hacia arriba y 1 hacia abajo
+    def onderExpand(self,j,i,image):
         imagenAux=image.copy()
         width, height = imagenAux.size
         pixels = imagenAux.load()
         for x in range(width):
             for y in range(height):
                 r, g, b = pixels[x,y]
-                newR =int(self.evaluateValue(np.tan(r)))
-                newG = int(self.evaluateValue(np.tan(g)))
-                newB = int(self.evaluateValue(np.tan(b)))
+                #x*log(pow(x,2))
+                #log(255/x)
+                #(255-1/(j*sqrt(2*pi))*pow(e,)1*r/20))    Parecida a la gaussiana
+                newR = int(self.evaluateValue((pow(-1,j) * (1/(sqrt(2*pi)))*pow(e,1*r/i)) + 255*j ))
+                newG = int(self.evaluateValue((pow(-1,j) * (1/(sqrt(2*pi)))*pow(e,1*g/i)) + 255*j ))
+                newB = int(self.evaluateValue((pow(-1,j) * (1/(sqrt(2*pi)))*pow(e,1*b/i)) + 255*j ))
                 pixels[x,y]=(newR,newG,newB)
         return imagenAux
-    '''def linealExpand(self,vMin,vMax,image):
-        imagenAux=image.copy()
-        width, height = imagenAux.size
-        pixels = imagenAux.load()
-        for x in range(width):
-            for y in range(height):
-                r, g, b = pixels[x,y]
-                newR = self.evaluateValue((255/(vMax-vMin))*(r-vMin))
-                newG = self.evaluateValue((255/(vMax-vMin))*(g-vMin))
-                newB = self.evaluateValue((255/(vMax-vMin))*(b-vMin))
-
-                pixels[x,y]=(newR,newG,newB)
-        return imagenAux'''
     def calculateMin(self,histogram):
         for i in range(len(histogram)):
             if(histogram[i] != 0):
@@ -121,6 +135,215 @@ class ToolsImage(object):
                 value = histogram[x]
                 xValue = x
         return xValue
+
+
+    #Convolution method
+    def simpleConvolution(self,kernel,df,image):
+        imagenAux=image.copy()
+        imagenAux2=image.copy()
+        width, height = imagenAux.size
+        pixels = imagenAux.load()
+        consulta = imagenAux2.load()
+        tam = len(kernel[0])
+        for x in createGenerator(width):
+            for y in createGenerator(height):
+                initX = x-int(tam/2)
+                initY = y-int(tam/2)
+                posX=0
+                posY=0
+                accruedR=0
+                accruedG=0
+                accruedB=0
+                excepts = 0
+                for i in createGenerator(pow(tam,2)):
+                    try:
+                        r,g,b=consulta[initX+posX%tam,initY+posY]
+                    except:
+                        excepts+=1
+                    else:
+                        accruedR += r*kernel[posX%tam][posY]/df
+                        accruedG += g*kernel[posX%tam][posY]/df
+                        accruedB += b*kernel[posX%tam][posY]/df
+                        posX+=1
+                        if(i%tam==tam-1):
+                            posY+=1
+                #already i have the kernel
+                pixels[x,y]=(int(accruedR),int(accruedG),int(accruedB))
+        return imagenAux
+    def generateSample(self,x,y,tam,consulta):
+        #consulta tiene errores
+        '''for i in range(3):
+            for j in range(3):
+                print(j,i,consulta[j,i])
+        print("\n")'''
+        #Generate a samble of consulta
+        sample = [[None]*tam]*tam
+        initX = x-int(tam/2)
+        initY = y-int(tam/2)
+        posX=0
+        posY=0
+        for i in createGenerator(pow(tam,2)):
+            try:
+                color = consulta[(initX+posX%tam),(initY+posY)]
+                #print((initX+posX%tam),(initY+posY),color)
+            except:
+                return None
+            else:
+                sample[posX%tam][posY] = color
+                posX+=1
+                if(i%tam==tam-1):
+                    posY+=1
+        return sample
+    def convolution(self,kernel,sample,divisor):
+        #the sample an operate with the kernel and apply the divisor
+        accruedR=0
+        accruedG=0
+        accruedB=0
+        for i in createGenerator(len(kernel)):
+            for j in createGenerator(len(kernel)):
+                r,g,b = sample[i][j]
+                multipler = kernel[i][j]
+                accruedR += r*multipler/divisor
+                accruedG += g*multipler/divisor
+                accruedB += b*multipler/divisor
+        return (int(accruedR),int(accruedG),int(accruedB))
+
+    def applyConvolution(self,kernel,df,image):
+        imagenAux=image.copy()
+        imagenAux2=image.copy()
+        width, height = imagenAux.size
+        pixels = imagenAux.load()
+        consulta = imagenAux2.load()
+        tam = len(kernel)
+        convolution=self.convolution
+        generateSample=self.generateSample
+        for y in createGenerator(height):
+            for x in createGenerator(width):
+                #aqui esta el error
+                sample = generateSample(x,y,tam,consulta)
+                if(sample != None):
+                    pixels[x,y]=convolution(kernel,sample,df)
+                else:
+                    pixels[x,y]=(0,0,0)
+        return imagenAux
+
+    def applyKirsch(self,image,divisor):
+        imagenAux=image.copy()
+        imagenAux2=image.copy()
+        width, height = imagenAux.size
+        pixels = imagenAux.load()
+        consulta = imagenAux2.load()
+        convolution=self.convolution
+        generateSample=self.generateSample
+        convolutionKirsch=self.convolutionKirsch
+        for x in createGenerator(width):
+            for y in createGenerator(height):
+                sample=generateSample(x,y,3,consulta)
+                if(sample!=None):
+                    pixels[x,y]=convolutionKirsch(sample,divisor)
+                else:
+                    pixels[x,y]=(255,255,255)
+        return imagenAux
+
+    def convolutionKirsch(self,sample,divisor):
+        arregloMascaras = self.getKernel("Kirsch")
+        mayorR = -1
+        mayorG = -1
+        mayorB = -1
+        convolution=self.convolution
+        for i in createGenerator(8):
+            r,g,b = convolution(arregloMascaras[i],sample,divisor)
+            if(r > mayorR):
+                mayorR = r
+            if(g > mayorG):
+                mayorG = g
+            if(b > mayorB):
+                mayorB = b
+        return (r,g,b)
+    def applyMasks(self,image,name,df):
+        imagenAux=image.copy()
+        imagenAux2=image.copy()
+        width, height = imagenAux.size
+        pixels = imagenAux.load()
+        consulta = imagenAux2.load()
+        arregloMascaras = self.getKernel(name)
+        tam = len(arregloMascaras[0])
+        for x in range(width):
+            for y in range(height):
+                mayorR = -1
+                mayorG = -1
+                mayorB = -1
+                for z in range(len(arregloMascaras)):
+                    #Convolutionnp.range
+                    initX = x-int(tam/2)
+                    initY = y-int(tam/2)
+                    posX=0
+                    posY=0
+                    accruedR=0
+                    accruedG=0
+                    accruedB=0
+                    excepts = 0
+                    for i in range(pow(tam,2)):
+                        try:
+                            r,g,b=consulta[initX+posX%tam,initY+posY]
+                        except:
+                            excepts+=1
+                        else:
+                            accruedR += r*arregloMascaras[z][posX%tam][posY]/df
+                            accruedG += g*arregloMascaras[z][posX%tam][posY]/df
+                            accruedB += b*arregloMascaras[z][posX%tam][posY]/df
+                            posX+=1
+                            if(i%tam==tam-1):
+                                posY+=1
+                    if(accruedR > mayorR):
+                        mayorR = accruedR
+                    if(accruedG > mayorG):
+                        mayorG = accruedG
+                    if(accruedB > mayorB):
+                        mayorB = accruedB
+                pixels[x,y] = (int(mayorR),int(mayorG),int(mayorB))
+        return imagenAux
+    def getKernel(self,name):
+        if(name=="Kirsch"):
+            kirsch1 = [[-3, -3, 5],[-3, 0, 5],[-3, -3, 5]]
+            kirsch2 = [[-3, 5, 5],[-3, 0, 5],[-3, -3, -3]]
+            kirsch3 = [[5, 5, 5],[-3, 0, -3],[-3, -3, -3]]
+            kirsch4 = [[5, 5, -3],[5, 0, -3],[-3, -3, -3]]
+            kirsch5 = [[5, -3, -3],[5, 0, -3],[5, -3, -3]]
+            kirsch6 = [[-3, -3, -3],[5, 0, -3],[5, 5, -3]]
+            kirsch7 = [[-3, -3, -3],[-3, 0, -3],[5, 5, 5]]
+            kirsch8 = [[-3, -3, -3],[-3, 0, 5],[-3, 5, 5]]
+            arregloMascaras = [kirsch1,kirsch2,kirsch3,kirsch4,kirsch5,kirsch6,kirsch7,kirsch8]
+            return arregloMascaras
+        if(name=="pixelDiference"):
+            pixelDiferenceGx = [[0,0,0],[0,1,-1],[0, 0, 0]]
+            pixelDiferenceGy = [[0, -1, 0],[0, 1, 0],[0, 0, 0]]
+            arregloMascaras = [pixelDiferenceGx,pixelDiferenceGy]
+            return arregloMascaras
+        if(name=="pixelSepareteDiference"):
+            pixelSepareteDiferenceGx = [[0,0,0],[1, 0,-1],[0, 0, 0]]
+            pixelSepareteDiferenceGy = [[0, -1, 0],[0,0,0],[0,1,0]]
+            arregloMascaras = [pixelSepareteDiferenceGx,pixelSepareteDiferenceGy]
+            return arregloMascaras
+        if(name=="prewitt"):
+            prewittGx = [[1,0,-1],[1,0,-1],[1,0,-1]]
+            prewittGy = [[-1,-1,-1],[0,0,0],[1, 1, 1]]
+            arregloMascaras = [prewittGx,prewittGy]
+            return arregloMascaras
+        if(name=="sobel"):
+            sobelGx = [[1,0,-1],[2,0,-2],[1,0,-1]]
+            sobelGy = [[-1,-2,-1],[0,0,0],[1,2,1]]
+            arregloMascaras = [sobelGx,sobelGy]
+            return arregloMascaras
+        if(name=="roberts"):
+            robertsGx = [[0,0,-1],[0,1,0],[0,0,0]]
+            robertsGy = [[-1,0,0],[0,1,0],[0,0,0]]
+            arregloMascaras = [robertsGx,robertsGy]
+            return arregloMascaras
+        if(name=="laplace"):
+            return [[0,1,0],[1,-4,1],[0,1,0]]
+
+
     def displaceTemperature(self,image,c):
         imagenAux=image.copy()
         width, height = imagenAux.size
@@ -214,7 +437,7 @@ class ToolsImage(object):
         plt.title("RGB")
         plt.xlabel("Valor 0-255")
         plt.ylabel("Frecuencia")
-        plt.grid('true')
+        #plt.grid('true')
         plt.bar(range(256),xr,color="red")
         plt.bar(range(256),xg,color="green")
         plt.bar(range(256),xb,color="blue")

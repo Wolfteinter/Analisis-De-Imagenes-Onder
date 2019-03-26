@@ -8,4 +8,11 @@ tools = ToolsImage()
 imagen1 = img.openImage()
 #hist = ImageHistogram(tools.greyScale(imagen1))
 #hist.histogramaRGB()
-img.showImagen(tools.tangencialExpand(imagen1))
+#Pruebas
+#num1 = 5
+imagenR = tools.simpleConvolution([[0,1,0],[1,-4,1],[0,1,0]],1,imagen1)
+#imagenR = tools.applyConvolution([[0,1,0],[1,-4,1],[0,1,0]],1,imagen1)
+#imagenR = tools.applyMasks(imagen1,"laplace",1)
+#imagenR = tools.applyKirsch(imagen1,1)
+img.showImagen(imagenR)
+#tools.histogramRGB(imagenR)
