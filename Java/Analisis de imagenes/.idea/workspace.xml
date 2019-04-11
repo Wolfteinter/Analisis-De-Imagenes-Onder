@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c514bb51-3c23-4a36-985d-881ee346e8a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unidad4_Hilos/src/CarreraPiedras/EstadioCarrera.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Unidad4_Hilos/src/CarreraPiedras/EstadioCarrera.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unidad4_Hilos/src/CarreraPiedras/EstadioCarrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unidad4_Hilos/src/CarreraPiedras/EstadioCarrera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unidad4_Hilos/src/CarreraPiedras/Planeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unidad4_Hilos/src/CarreraPiedras/Planeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Ejercicio2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Ejercicio3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Ejercicio4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Alemania/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Alemania/G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Alemania/R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Alemania/RGB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Alemania/alemania.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Darth-Vader.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Decargar-efectos-de-chroma-key-gratis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Elefante/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Elefante/G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Elefante/R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Elefante/RGB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Elefante/elefante.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Fild.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Table/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Table/G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Table/R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Table/RGB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Table/table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Tierra/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Tierra/G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Tierra/R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Tierra/RGB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/Tierra/tierra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/carlos.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/clouds.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/fild2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/pies/índice.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/prueba/prueba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/prueba/prueba2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/prueba/prueba3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/prueba/prueba4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/prueba/prueba5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/origina3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/original1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/original2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/original5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/procesada1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/procesada2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/procesada4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/procesada5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/Kirsch/tajPro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/Procesada1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/origina3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/original1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/original2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/original4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/procesada2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/procesada3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/procesada4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles separados/tajPro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/origina3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/original1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/original2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/original5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/procesada1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/procesada2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/procesada3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/procesada5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/diferencia de pixeles/tajPro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/origina3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/original1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/original2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/original5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/proTaj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/procesada2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/procesada3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/procesada4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/laplace/procesando1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/origina3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/original1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/original2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/original5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/procesad2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/procesada1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/procesada3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/procesada4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/prewitt/tajPro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/origina3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/original1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/original2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/original5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/procesada1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/procesada2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/procesada3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/procesada4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/robert/tajPro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/origina3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/original1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/original2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/original5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/procesada1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/procesada2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/procesada3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/procesada4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/tajPro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/reporte Mascaras/sobel/tajProcolor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/soltierra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/spider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/taj/TajMahal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/tierra.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/tierraEdit.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/umbral1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/umbral2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Imagenes/yo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesCambiarColor/hola1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesCambiarColor/hola2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesCambiarColor/hola3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesCambiarColor/hola4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesCambiarColor/hola5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesCambiarColor/hola6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/Lineal/contraste3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/Lineal/histoExpand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/Lineal/histoOriginal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/Lineal/leanialExpand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/(0,10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/(0,12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/(0,15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/(1,10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/(1,12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/(1,15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/histo(0,10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/histo(0,12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/histo(0,15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/histo(1,10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/histo(1,12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/histo(1,15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/histoOriginal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/imagen Cerabral 2/original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/logaritmic/170expancionLogaritmica.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/logaritmic/180Expansion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/logaritmic/190Exposion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/logaritmic/histoExpansion170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/logaritmic/histoExpansion180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/logaritmic/histoExpansion190.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/Reporte de imagenes/logaritmic/histoOriginal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/contraste.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/contraste2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/contraste3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/contrasteCerebro1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesContraste/contrasteCerebro2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesGrises/atardecer0.0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesGrises/gris1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesGrises/gris2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesGrises/gris3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesGrises/spiderGRis(histo).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesGrises/spiderGRis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/hola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/mark.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/señor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/señora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/spider.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/spider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/toOtsu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/umbral1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/umbral2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ImagenesUmbralizacion/yo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/Prueba1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Agujero Negro/Prueba10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Agujero Negro/Prueba12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Agujero Negro/agNogroEdit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Agujero Negro/astronauta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Agujero Negro/prueba11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/astronauta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/prueba9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/PruebasEfectoCroma/Planeta tierra/tierraEdit.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/brillanteGUI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/debug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/ejercicio5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/imageHistogram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/imageManager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/kernel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/negativo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/pruebaMuestra.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/resultado" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/temperaturaGUI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/toolsImage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/umbralGUI.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1483" />
+    <option name="y" value="6" />
+    <option name="width" value="1295" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Analisis de imagenes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analisis de imagenes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Analisis de imagenes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analisis de imagenes" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c514bb51-3c23-4a36-985d-881ee346e8a2" name="Default Changelist" comment="" />
+      <created>1554942138550</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554942138550</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1483" y="6" width="1295" height="728" extended-state="0" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979983" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+</project>
