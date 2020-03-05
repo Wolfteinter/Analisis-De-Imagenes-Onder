@@ -416,10 +416,10 @@ class ToolsImage(object):
         wB = 0;
         maximum = 0
         sum1 = np.dot(range(0,256),values)
-        for i in range(256):
+        for i in range(1,256):
             wB = wB + values[i]
             wF = total - wB;
-            if (wB == 0 and wF == 0):
+            if (wB > 0 and wF > 0):
                 continue
             sumB = sumB +  (i-1) * values[i]
             mF = (sum1 - sumB) / wF
